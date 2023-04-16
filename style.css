@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    background-color: #ECF0F3;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    gap: 20px;
+    background-color: #E3E6EC;
+    padding: 50px 25px;
+    box-shadow: 10px 10px 10px #D4DCE8, -10px -10px 10px #FDFDFD;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.main input {
+    padding: 20px 10px;
+    outline: none;
+    border: none;
+    width: 220px;
+    background-color: #E6E9EF;
+    font-size: 30px;
+    box-shadow: 5px 5px 10px #c4cbd6 inset, inset -5px -5px 10px #FDFDFD;
+}
+
+.main input::placeholder {
+    font-size: 25px;
+}
+
+button {
+    width: 230px;
+    border: none;
+    font-size: 21px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    background-color: #E3E6EC;
+    box-shadow: 5px 5px 10px #c4cbd6, -5px -5px 10px #FDFDFD;
+    color: #b00000;
+    cursor: pointer;
+}
+
+.main button:nth-child(3) {
+    margin-top: 30px;
+    margin-bottom: 2px;
+    color: #008b00;
+}
+
+.main button:nth-child(3):active {
+    color: #017201;
+    box-shadow: 5px 5px 10px #b6c8b8 inset, inset -5px -5px 10px #FDFDFD;
+}
+
+.main button:nth-child(4):active {
+    color: #b00000;
+    box-shadow: 5px 5px 10px #f6afaf inset, inset -5px -5px 10px #FDFDFD;
+}
+
+#finalResult {
+    font-size: 25px;
+    line-height: 35px;
+    word-spacing: 20px;
+    font-weight: 500;
+    background-color: #E3E6EC;
+    border: none;
+    border-radius: 10px;
+    background-color: #E3E6EC;
+    padding: 20px;
+    box-shadow: 10px 10px 10px #D4DCE8, -10px -10px 10px #FDFDFD;
+}
+
+@media (max-width:720px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width:720px) {
+    body {
+        flex-direction: column;
+    }
+}
